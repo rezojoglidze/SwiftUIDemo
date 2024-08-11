@@ -11,7 +11,8 @@ import RJSwiftCommon
 
 @CodingKeys()
 @MockBuilder(numberOfItems: 5, dataGeneratorType: .random)
-struct GetDevelopersEntity: Decodable {
+struct GetDevelopersEntity: Decodable, Identifiable {
+    var id: UUID = .init()
     let name: String
     let surname: String
     let yearsOfExperience: Int

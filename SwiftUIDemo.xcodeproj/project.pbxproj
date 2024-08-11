@@ -25,6 +25,7 @@
 		A9488C8D2C69555F0044815D /* GetDevelopersEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C8C2C69555F0044815D /* GetDevelopersEntity.swift */; };
 		A9488C8F2C6955680044815D /* GetDevelopersGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C8E2C6955680044815D /* GetDevelopersGateway.swift */; };
 		A9488C912C6955720044815D /* MockGetDevelopersGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C902C6955720044815D /* MockGetDevelopersGateway.swift */; };
+		A9488C942C695E4A0044815D /* PreviewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C932C695E4A0044815D /* PreviewConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		A9488C8C2C69555F0044815D /* GetDevelopersEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDevelopersEntity.swift; sourceTree = "<group>"; };
 		A9488C8E2C6955680044815D /* GetDevelopersGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDevelopersGateway.swift; sourceTree = "<group>"; };
 		A9488C902C6955720044815D /* MockGetDevelopersGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGetDevelopersGateway.swift; sourceTree = "<group>"; };
+		A9488C932C695E4A0044815D /* PreviewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				A9488C852C6954BB0044815D /* Gateways */,
 				A922170C2C6800B80009F898 /* Helpers */,
 				A92217102C688C4F0009F898 /* Extensions */,
+				A9488C922C695E350044815D /* Preview Helpers */,
 				A92216F42C673F650009F898 /* Resources */,
 				A92216EA2C673D370009F898 /* Preview Content */,
 			);
@@ -172,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				A922170D2C6800CF0009F898 /* BrandBook */,
+				A9488C932C695E4A0044815D /* PreviewConfiguration.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -234,6 +238,13 @@
 				A9488C902C6955720044815D /* MockGetDevelopersGateway.swift */,
 			);
 			path = "Get Developers Gateway";
+			sourceTree = "<group>";
+		};
+		A9488C922C695E350044815D /* Preview Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Helpers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +334,7 @@
 				A92217052C677A850009F898 /* DeveloperCardRowUIModel.swift in Sources */,
 				A92216FC2C675D640009F898 /* HomeViewModel.swift in Sources */,
 				A922170F2C6800DD0009F898 /* FontBook.swift in Sources */,
+				A9488C942C695E4A0044815D /* PreviewConfiguration.swift in Sources */,
 				A92217122C688C760009F898 /* Extension+CGSize.swift in Sources */,
 				A92217032C677A730009F898 /* DeveloperCardRowParameters.swift in Sources */,
 				A9488C8F2C6955680044815D /* GetDevelopersGateway.swift in Sources */,

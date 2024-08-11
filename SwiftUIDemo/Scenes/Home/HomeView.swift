@@ -42,7 +42,7 @@ struct HomeView: View {
             VStack(spacing: 10) {
                 ForEach(
                     viewModel.developers,
-                    id: \.about,
+                    id: \.id,
                     content: { person in
                         DeveloperCardRow(
                             parameters: .init(
@@ -64,7 +64,9 @@ struct HomeView: View {
 #if DEBUG
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        configurePreview()
+        
+        return HomeView()
     }
 }
 #endif

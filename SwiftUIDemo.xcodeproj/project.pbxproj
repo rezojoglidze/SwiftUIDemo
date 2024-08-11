@@ -8,23 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		A92216E52C673D350009F898 /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92216E42C673D350009F898 /* SwiftUIDemoApp.swift */; };
-		A92216E72C673D350009F898 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92216E62C673D350009F898 /* ContentView.swift */; };
 		A92216E92C673D370009F898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92216E82C673D370009F898 /* Assets.xcassets */; };
 		A92216EC2C673D370009F898 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92216EB2C673D370009F898 /* Preview Assets.xcassets */; };
 		A92216F72C6741300009F898 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92216F62C6741300009F898 /* LaunchScreen.storyboard */; };
 		A92216FA2C675D240009F898 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92216F92C675D240009F898 /* HomeView.swift */; };
 		A92216FC2C675D640009F898 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92216FB2C675D640009F898 /* HomeViewModel.swift */; };
+		A92217012C6779750009F898 /* DeveloperCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217002C6779750009F898 /* DeveloperCardView.swift */; };
+		A92217032C677A730009F898 /* DeveloperCardViewParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217022C677A730009F898 /* DeveloperCardViewParameters.swift */; };
+		A92217052C677A850009F898 /* DeveloperCardViewUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217042C677A850009F898 /* DeveloperCardViewUIModel.swift */; };
+		A92217082C677AD10009F898 /* RJSwiftMacros in Frameworks */ = {isa = PBXBuildFile; productRef = A92217072C677AD10009F898 /* RJSwiftMacros */; };
+		A922170F2C6800DD0009F898 /* FontBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A922170E2C6800DD0009F898 /* FontBook.swift */; };
+		A92217122C688C760009F898 /* Extension+CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217112C688C760009F898 /* Extension+CGSize.swift */; };
+		A92217142C688D290009F898 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217132C688D290009F898 /* Extension+View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A92216E12C673D350009F898 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92216E42C673D350009F898 /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
-		A92216E62C673D350009F898 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A92216E82C673D370009F898 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A92216EB2C673D370009F898 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A92216F62C6741300009F898 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A92216F92C675D240009F898 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A92216FB2C675D640009F898 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A92217002C6779750009F898 /* DeveloperCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperCardView.swift; sourceTree = "<group>"; };
+		A92217022C677A730009F898 /* DeveloperCardViewParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperCardViewParameters.swift; sourceTree = "<group>"; };
+		A92217042C677A850009F898 /* DeveloperCardViewUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperCardViewUIModel.swift; sourceTree = "<group>"; };
+		A922170E2C6800DD0009F898 /* FontBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontBook.swift; sourceTree = "<group>"; };
+		A92217112C688C760009F898 /* Extension+CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CGSize.swift"; sourceTree = "<group>"; };
+		A92217132C688D290009F898 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92217082C677AD10009F898 /* RJSwiftMacros in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +71,9 @@
 			children = (
 				A92216F22C673F4E0009F898 /* App */,
 				A92216F32C673F530009F898 /* Scenes */,
+				A92216FD2C6778430009F898 /* Views */,
+				A922170C2C6800B80009F898 /* Helpers */,
+				A92217102C688C4F0009F898 /* Extensions */,
 				A92216F42C673F650009F898 /* Resources */,
 				A92216EA2C673D370009F898 /* Preview Content */,
 			);
@@ -86,7 +101,6 @@
 			children = (
 				A92216F52C6741220009F898 /* Splash */,
 				A92216F82C675CFD0009F898 /* Home */,
-				A92216E62C673D350009F898 /* ContentView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -116,6 +130,57 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		A92216FD2C6778430009F898 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A92216FE2C6778540009F898 /* Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A92216FE2C6778540009F898 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A92216FF2C67795B0009F898 /* Developer Card View */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A92216FF2C67795B0009F898 /* Developer Card View */ = {
+			isa = PBXGroup;
+			children = (
+				A92217002C6779750009F898 /* DeveloperCardView.swift */,
+				A92217022C677A730009F898 /* DeveloperCardViewParameters.swift */,
+				A92217042C677A850009F898 /* DeveloperCardViewUIModel.swift */,
+			);
+			path = "Developer Card View";
+			sourceTree = "<group>";
+		};
+		A922170C2C6800B80009F898 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A922170D2C6800CF0009F898 /* BrandBook */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A922170D2C6800CF0009F898 /* BrandBook */ = {
+			isa = PBXGroup;
+			children = (
+				A922170E2C6800DD0009F898 /* FontBook.swift */,
+			);
+			path = BrandBook;
+			sourceTree = "<group>";
+		};
+		A92217102C688C4F0009F898 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A92217112C688C760009F898 /* Extension+CGSize.swift */,
+				A92217132C688D290009F898 /* Extension+View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +197,9 @@
 			dependencies = (
 			);
 			name = SwiftUIDemo;
+			packageProductDependencies = (
+				A92217072C677AD10009F898 /* RJSwiftMacros */,
+			);
 			productName = SwiftUIDemo;
 			productReference = A92216E12C673D350009F898 /* SwiftUIDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -160,6 +228,9 @@
 				Base,
 			);
 			mainGroup = A92216D82C673D350009F898;
+			packageReferences = (
+				A92217062C677AD10009F898 /* XCRemoteSwiftPackageReference "RJSwiftMacros" */,
+			);
 			productRefGroup = A92216E22C673D350009F898 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -188,9 +259,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A92216FA2C675D240009F898 /* HomeView.swift in Sources */,
-				A92216E72C673D350009F898 /* ContentView.swift in Sources */,
+				A92217142C688D290009F898 /* Extension+View.swift in Sources */,
+				A92217012C6779750009F898 /* DeveloperCardView.swift in Sources */,
 				A92216E52C673D350009F898 /* SwiftUIDemoApp.swift in Sources */,
+				A92217052C677A850009F898 /* DeveloperCardViewUIModel.swift in Sources */,
 				A92216FC2C675D640009F898 /* HomeViewModel.swift in Sources */,
+				A922170F2C6800DD0009F898 /* FontBook.swift in Sources */,
+				A92217122C688C760009F898 /* Extension+CGSize.swift in Sources */,
+				A92217032C677A730009F898 /* DeveloperCardViewParameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +474,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A92217062C677AD10009F898 /* XCRemoteSwiftPackageReference "RJSwiftMacros" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rezojoglidze/RJSwiftMacros";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A92217072C677AD10009F898 /* RJSwiftMacros */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A92217062C677AD10009F898 /* XCRemoteSwiftPackageReference "RJSwiftMacros" */;
+			productName = RJSwiftMacros;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A92216D92C673D350009F898 /* Project object */;
 }

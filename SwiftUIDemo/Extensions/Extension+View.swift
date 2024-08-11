@@ -1,0 +1,30 @@
+//
+//  Extension+View.swift
+//  SwiftUIDemo
+//
+//  Created by Rezo Joglidze on 11.08.24.
+//
+
+import SwiftUI
+
+// MARK: - View Custom Frames
+extension View {
+    /// Positions `View` within an invisible frame with the specified size.
+    ///
+    ///     var body: some View {
+    ///         Color.accentColor
+    ///             .frame(size: CGSize(dimension: 100))
+    ///     }
+    ///
+    public func frame(
+        size: CGSize?,
+        alignment: Alignment = .center
+    ) -> some View {
+        self
+            .frame(
+                width: size?.width,
+                height: size?.height,
+                alignment: alignment
+            )
+    }
+}

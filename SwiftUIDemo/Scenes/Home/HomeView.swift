@@ -37,12 +37,16 @@ struct HomeView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            DeveloperCardView(parameters: .init(icon: Image(systemName: "swift"), title: "das", description: "DASda"))
         }
         .padding()
     }
 }
 
 // MARK: - Preview
+#if DEBUG
+
 #Preview {
     HomeView()
 }
+#endif

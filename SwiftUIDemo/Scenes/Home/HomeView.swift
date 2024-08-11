@@ -26,6 +26,8 @@ struct HomeView: View {
             backgroundView
             developersView
                 .padding(20)
+        }).onAppear(perform: {
+            viewModel.didLoad()
         })
     }
     
@@ -40,7 +42,7 @@ struct HomeView: View {
             VStack(spacing: 10) {
                 ForEach(
                     viewModel.developers,
-                    id: \.uuid,
+                    id: \.about,
                     content: { person in
                         DeveloperCardRow(
                             parameters: .init(

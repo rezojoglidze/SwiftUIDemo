@@ -56,17 +56,18 @@ struct DeveloperCardView: View {
     }
     
     private var imageView: some View {
-        ZStack() {
-            Circle()
-                .fill(uiModel.iconBackgroundColor)
-                .frame(size: uiModel.iconBackgroundSize)
-            
+        ZStack(content: {
+            RoundedRectangle(cornerRadius: uiModel.iconBackgroundCornerRadius)
+                .frame(dimension: uiModel.iconBackgroundDimension)
+                .foregroundStyle(uiModel.iconBackgroundColor)
+
             parameters.icon
+                .renderingMode(.template)
                 .resizable()
-                .frame(size: uiModel.iconSize)
-                .foregroundStyle(.indigo)
-        }
-        .clipShape(.circle)
+                .scaledToFit()
+                .frame(dimension: uiModel.iconDimension)
+                .foregroundColor(.blue)
+        })
     }
     
     private var backgroundView: some View {

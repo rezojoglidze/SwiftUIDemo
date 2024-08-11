@@ -9,9 +9,10 @@ import SwiftUI
 import RJSwiftMacros
 import RJSwiftCommon
 
-// MARK: Developer Card View Parameters
+// MARK: - Developer Card View Parameters
 @MockBuilder()
 struct DeveloperCardRowParameters {
+    // MARK: Properties
     let icon: Image
     let title: String
     let description: String

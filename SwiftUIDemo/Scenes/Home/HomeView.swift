@@ -20,6 +20,9 @@ struct HomeView: View {
     // MARK: Body
     var body: some View {
         ZStack(content: {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
             backgroundView
             developersView
                 .padding(20)
@@ -30,26 +33,6 @@ struct HomeView: View {
         Color.gray
             .opacity(0.3)
             .ignoresSafeArea()
-    }
-    
-    private var contentView: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            DeveloperCardRow(
-                parameters: .init(
-                    icon: Image(systemName: "swift"),
-                    title: "das",
-                    description: "DASda",
-                    tapAction: {
-                        
-                    }
-                )
-            )
-        }
-        .padding()
     }
     
     private var developersView: some View {

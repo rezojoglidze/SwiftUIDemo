@@ -20,6 +20,11 @@
 		A922170F2C6800DD0009F898 /* FontBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A922170E2C6800DD0009F898 /* FontBook.swift */; };
 		A92217122C688C760009F898 /* Extension+CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217112C688C760009F898 /* Extension+CGSize.swift */; };
 		A92217142C688D290009F898 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217132C688D290009F898 /* Extension+View.swift */; };
+		A9488C842C6954620044815D /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C832C6954620044815D /* DIContainer.swift */; };
+		A9488C892C6955410044815D /* GetDevelopersGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C882C6955410044815D /* GetDevelopersGatewayProtocol.swift */; };
+		A9488C8D2C69555F0044815D /* GetDevelopersEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C8C2C69555F0044815D /* GetDevelopersEntity.swift */; };
+		A9488C8F2C6955680044815D /* GetDevelopersGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C8E2C6955680044815D /* GetDevelopersGateway.swift */; };
+		A9488C912C6955720044815D /* MockGetDevelopersGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C902C6955720044815D /* MockGetDevelopersGateway.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		A922170E2C6800DD0009F898 /* FontBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontBook.swift; sourceTree = "<group>"; };
 		A92217112C688C760009F898 /* Extension+CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CGSize.swift"; sourceTree = "<group>"; };
 		A92217132C688D290009F898 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
+		A9488C832C6954620044815D /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		A9488C882C6955410044815D /* GetDevelopersGatewayProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDevelopersGatewayProtocol.swift; sourceTree = "<group>"; };
+		A9488C8C2C69555F0044815D /* GetDevelopersEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDevelopersEntity.swift; sourceTree = "<group>"; };
+		A9488C8E2C6955680044815D /* GetDevelopersGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDevelopersGateway.swift; sourceTree = "<group>"; };
+		A9488C902C6955720044815D /* MockGetDevelopersGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGetDevelopersGateway.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,8 @@
 				A92216F22C673F4E0009F898 /* App */,
 				A92216F32C673F530009F898 /* Scenes */,
 				A92216FD2C6778430009F898 /* Views */,
+				A9488C812C69543E0044815D /* Services and Managers */,
+				A9488C852C6954BB0044815D /* Gateways */,
 				A922170C2C6800B80009F898 /* Helpers */,
 				A92217102C688C4F0009F898 /* Extensions */,
 				A92216F42C673F650009F898 /* Resources */,
@@ -181,6 +193,49 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		A9488C812C69543E0044815D /* Services and Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A9488C822C6954570044815D /* DI */,
+			);
+			path = "Services and Managers";
+			sourceTree = "<group>";
+		};
+		A9488C822C6954570044815D /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				A9488C832C6954620044815D /* DIContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		A9488C852C6954BB0044815D /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				A9488C862C6954CB0044815D /* Network Gateways */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		A9488C862C6954CB0044815D /* Network Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				A9488C872C6954DA0044815D /* Get Developers Gateway */,
+			);
+			path = "Network Gateways";
+			sourceTree = "<group>";
+		};
+		A9488C872C6954DA0044815D /* Get Developers Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				A9488C882C6955410044815D /* GetDevelopersGatewayProtocol.swift */,
+				A9488C8C2C69555F0044815D /* GetDevelopersEntity.swift */,
+				A9488C8E2C6955680044815D /* GetDevelopersGateway.swift */,
+				A9488C902C6955720044815D /* MockGetDevelopersGateway.swift */,
+			);
+			path = "Get Developers Gateway";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -260,13 +315,18 @@
 			files = (
 				A92216FA2C675D240009F898 /* HomeView.swift in Sources */,
 				A92217142C688D290009F898 /* Extension+View.swift in Sources */,
+				A9488C842C6954620044815D /* DIContainer.swift in Sources */,
+				A9488C892C6955410044815D /* GetDevelopersGatewayProtocol.swift in Sources */,
 				A92217012C6779750009F898 /* DeveloperCardRow.swift in Sources */,
 				A92216E52C673D350009F898 /* SwiftUIDemoApp.swift in Sources */,
+				A9488C912C6955720044815D /* MockGetDevelopersGateway.swift in Sources */,
 				A92217052C677A850009F898 /* DeveloperCardRowUIModel.swift in Sources */,
 				A92216FC2C675D640009F898 /* HomeViewModel.swift in Sources */,
 				A922170F2C6800DD0009F898 /* FontBook.swift in Sources */,
 				A92217122C688C760009F898 /* Extension+CGSize.swift in Sources */,
 				A92217032C677A730009F898 /* DeveloperCardRowParameters.swift in Sources */,
+				A9488C8F2C6955680044815D /* GetDevelopersGateway.swift in Sources */,
+				A9488C8D2C69555F0044815D /* GetDevelopersEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

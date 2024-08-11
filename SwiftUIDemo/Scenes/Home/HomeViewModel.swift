@@ -12,8 +12,13 @@ import RJSwiftCommon
 // MARK: - Home View Model
 @MainActor
 final class HomeViewModel: ObservableObject {
-    
+    // MARK: Properties
     @Published private(set) var developers: [Person] = [.mock, .mock, .mock]
+    
+    // MARK: Requests
+    private func loadDevelopers() {
+        
+    }
 }
 
 

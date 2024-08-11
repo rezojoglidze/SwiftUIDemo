@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// MARK: Developer Card View UI Model
+// MARK: - Developer Card View UI Model
 struct DeveloperCardRowUIModel {
     let contentMargins: EdgeInsets = .init(top: 28, leading: 20, bottom: 28, trailing: 20)
     

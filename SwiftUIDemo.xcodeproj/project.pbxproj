@@ -13,9 +13,9 @@
 		A92216F72C6741300009F898 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92216F62C6741300009F898 /* LaunchScreen.storyboard */; };
 		A92216FA2C675D240009F898 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92216F92C675D240009F898 /* HomeView.swift */; };
 		A92216FC2C675D640009F898 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92216FB2C675D640009F898 /* HomeViewModel.swift */; };
-		A92217012C6779750009F898 /* DeveloperCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217002C6779750009F898 /* DeveloperCardView.swift */; };
-		A92217032C677A730009F898 /* DeveloperCardViewParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217022C677A730009F898 /* DeveloperCardViewParameters.swift */; };
-		A92217052C677A850009F898 /* DeveloperCardViewUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217042C677A850009F898 /* DeveloperCardViewUIModel.swift */; };
+		A92217012C6779750009F898 /* DeveloperCardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217002C6779750009F898 /* DeveloperCardRow.swift */; };
+		A92217032C677A730009F898 /* DeveloperCardRowParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217022C677A730009F898 /* DeveloperCardRowParameters.swift */; };
+		A92217052C677A850009F898 /* DeveloperCardRowUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217042C677A850009F898 /* DeveloperCardRowUIModel.swift */; };
 		A92217082C677AD10009F898 /* RJSwiftMacros in Frameworks */ = {isa = PBXBuildFile; productRef = A92217072C677AD10009F898 /* RJSwiftMacros */; };
 		A922170F2C6800DD0009F898 /* FontBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A922170E2C6800DD0009F898 /* FontBook.swift */; };
 		A92217122C688C760009F898 /* Extension+CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217112C688C760009F898 /* Extension+CGSize.swift */; };
@@ -30,9 +30,9 @@
 		A92216F62C6741300009F898 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A92216F92C675D240009F898 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A92216FB2C675D640009F898 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		A92217002C6779750009F898 /* DeveloperCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperCardView.swift; sourceTree = "<group>"; };
-		A92217022C677A730009F898 /* DeveloperCardViewParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperCardViewParameters.swift; sourceTree = "<group>"; };
-		A92217042C677A850009F898 /* DeveloperCardViewUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperCardViewUIModel.swift; sourceTree = "<group>"; };
+		A92217002C6779750009F898 /* DeveloperCardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperCardRow.swift; sourceTree = "<group>"; };
+		A92217022C677A730009F898 /* DeveloperCardRowParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperCardRowParameters.swift; sourceTree = "<group>"; };
+		A92217042C677A850009F898 /* DeveloperCardRowUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperCardRowUIModel.swift; sourceTree = "<group>"; };
 		A922170E2C6800DD0009F898 /* FontBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontBook.swift; sourceTree = "<group>"; };
 		A92217112C688C760009F898 /* Extension+CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CGSize.swift"; sourceTree = "<group>"; };
 		A92217132C688D290009F898 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
@@ -149,9 +149,9 @@
 		A92216FF2C67795B0009F898 /* Developer Card View */ = {
 			isa = PBXGroup;
 			children = (
-				A92217002C6779750009F898 /* DeveloperCardView.swift */,
-				A92217022C677A730009F898 /* DeveloperCardViewParameters.swift */,
-				A92217042C677A850009F898 /* DeveloperCardViewUIModel.swift */,
+				A92217002C6779750009F898 /* DeveloperCardRow.swift */,
+				A92217022C677A730009F898 /* DeveloperCardRowParameters.swift */,
+				A92217042C677A850009F898 /* DeveloperCardRowUIModel.swift */,
 			);
 			path = "Developer Card View";
 			sourceTree = "<group>";
@@ -260,13 +260,13 @@
 			files = (
 				A92216FA2C675D240009F898 /* HomeView.swift in Sources */,
 				A92217142C688D290009F898 /* Extension+View.swift in Sources */,
-				A92217012C6779750009F898 /* DeveloperCardView.swift in Sources */,
+				A92217012C6779750009F898 /* DeveloperCardRow.swift in Sources */,
 				A92216E52C673D350009F898 /* SwiftUIDemoApp.swift in Sources */,
-				A92217052C677A850009F898 /* DeveloperCardViewUIModel.swift in Sources */,
+				A92217052C677A850009F898 /* DeveloperCardRowUIModel.swift in Sources */,
 				A92216FC2C675D640009F898 /* HomeViewModel.swift in Sources */,
 				A922170F2C6800DD0009F898 /* FontBook.swift in Sources */,
 				A92217122C688C760009F898 /* Extension+CGSize.swift in Sources */,
-				A92217032C677A730009F898 /* DeveloperCardViewParameters.swift in Sources */,
+				A92217032C677A730009F898 /* DeveloperCardRowParameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

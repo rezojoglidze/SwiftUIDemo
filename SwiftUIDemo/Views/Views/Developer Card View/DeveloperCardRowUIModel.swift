@@ -1,5 +1,5 @@
 //
-//  DeveloperCardViewUIModel.swift
+//  DeveloperCardRowUIModel.swift
 //  SwiftUIDemo
 //
 //  Created by Rezo Joglidze on 10.08.24.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 // MARK: Developer Card View UI Model
-struct DeveloperCardViewUIModel {
+struct DeveloperCardRowUIModel {
     let contentMargins: EdgeInsets = .init(top: 28, leading: 20, bottom: 28, trailing: 20)
     
     let backgroundColor: Color = .orange.opacity(0.3)

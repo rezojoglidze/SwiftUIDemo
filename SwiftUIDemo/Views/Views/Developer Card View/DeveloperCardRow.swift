@@ -1,5 +1,5 @@
 //
-//  DeveloperCardView.swift
+//  DeveloperCardRow.swift
 //  SwiftUIDemo
 //
 //  Created by Rezo Joglidze on 10.08.24.
@@ -8,18 +8,18 @@
 import SwiftUI
 
 // MARK: - Developer Card View
-struct DeveloperCardView: View {
+struct DeveloperCardRow: View {
     
     // MARK: Properties - UI Model
-    private let uiModel: DeveloperCardViewUIModel
+    private let uiModel: DeveloperCardRowUIModel
     
     // MARK: Properties - Data
-    private let parameters: DeveloperCardViewParameters
+    private let parameters: DeveloperCardRowParameters
     
     // MARK: initializers
     init(
-        uiModel: DeveloperCardViewUIModel = .init(),
-        parameters: DeveloperCardViewParameters
+        uiModel: DeveloperCardRowUIModel = .init(),
+        parameters: DeveloperCardRowParameters
     ) {
         self.uiModel = uiModel
         self.parameters = parameters
@@ -80,7 +80,7 @@ struct DeveloperCardView: View {
 #if DEBUG
 struct DeveloperCardView_Previews: PreviewProvider {
     static var previews: some View {
-        DeveloperCardView(parameters: DeveloperCardViewParameters.mock)
+        DeveloperCardRow(parameters: DeveloperCardRowParameters.mock)
             .padding(15)
     }
 }

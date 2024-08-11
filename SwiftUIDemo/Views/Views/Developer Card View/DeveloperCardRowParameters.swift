@@ -1,5 +1,5 @@
 //
-//  DeveloperCardViewParameters.swift
+//  DeveloperCardRowParameters.swift
 //  SwiftUIDemo
 //
 //  Created by Rezo Joglidze on 10.08.24.
@@ -11,13 +11,9 @@ import RJSwiftCommon
 
 // MARK: Developer Card View Parameters
 @MockBuilder()
-struct DeveloperCardViewParameters {
+struct DeveloperCardRowParameters {
     let icon: Image
-    
-    @MockBuilderProperty(value: "John Doe")
     let title: String
-    
-    @MockBuilderProperty(value: "iOS Developer with good expreince planing and building applications")
     let description: String
+    let tapAction: () -> Void
 }
-

@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/rezojoglidze/RJSwiftMacros",
       "state" : {
-        "revision" : "498989dd9f0ff38bcb2e0143fb3053af48583594",
-        "version" : "0.3.3"
+        "revision" : "0911ea294d1b3643ec729981ad5b3d3a2cfb9cce",
+        "version" : "0.3.4"
       }
     },
     {

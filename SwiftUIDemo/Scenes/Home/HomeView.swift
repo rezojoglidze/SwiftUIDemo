@@ -21,7 +21,8 @@ struct HomeView: View {
     var body: some View {
         ZStack(content: {
             backgroundView
-            contentView
+            developersView
+                .padding(20)
         })
     }
     
@@ -37,16 +38,48 @@ struct HomeView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
-            DeveloperCardView(parameters: .init(icon: Image(systemName: "swift"), title: "das", description: "DASda"))
+            DeveloperCardRow(
+                parameters: .init(
+                    icon: Image(systemName: "swift"),
+                    title: "das",
+                    description: "DASda",
+                    tapAction: {
+                        
+                    }
+                )
+            )
         }
         .padding()
+    }
+    
+    private var developersView: some View {
+        ScrollView(content: {
+            VStack(spacing: 10) {
+                ForEach(
+                    viewModel.developers,
+                    id: \.uuid,
+                    content: { person in
+                        DeveloperCardRow(
+                            parameters: .init(
+                                icon: Image(systemName: "swift"),
+                                title: person.name,
+                                description: person.surname, tapAction: {
+                                    
+                                }
+                            )
+                        )
+                    }
+                )
+            }
+        })
     }
 }
 
 // MARK: - Preview
 #if DEBUG
-
-#Preview {
-    HomeView()
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
+    }
 }
 #endif

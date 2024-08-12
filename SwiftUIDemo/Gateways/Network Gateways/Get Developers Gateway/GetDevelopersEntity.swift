@@ -11,8 +11,8 @@ import RJSwiftCommon
 
 @CodingKeys()
 @MockBuilder(numberOfItems: 5, dataGeneratorType: .random)
-struct GetDevelopersEntity: Decodable, Identifiable {
-    var id: UUID = .init()
+struct GetDevelopersEntity: Decodable, Identifiable, Hashable {
+    @CodingKeyIgnored() var id: UUID = .init()
     let name: String
     let surname: String
     let yearsOfExperience: Int

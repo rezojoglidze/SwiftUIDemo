@@ -12,6 +12,9 @@ struct HomeView: View {
     // MARK: Properties
     @StateObject private var viewModel: HomeViewModel
     
+    // MARK: Properties - Navigation
+    @State private var navigationPath = NavigationPath()
+    
     // MARK: Initializers
     init() {
         self._viewModel = StateObject(wrappedValue: HomeViewModel())
@@ -19,16 +22,24 @@ struct HomeView: View {
     
     // MARK: Body
     var body: some View {
-        ZStack(content: {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            backgroundView
-            developersView
-                .padding(20)
-        }).onFirstAppear(perform: {
-            viewModel.didLoad()
-        })
+        NavigationStack(path: $navigationPath) {
+            ZStack {
+                backgroundView
+                developersView
+                    .padding(20)
+            }
+            .onFirstAppear(perform: {
+                viewModel.didLoad()
+            })
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("Home View")
+            .navigationDestination(
+                for: GetDevelopersEntity.self,
+                destination: { entity in
+                    DeveloperDetailsView(parameters: .init(developer: entity))
+                }
+            )
+        }
     }
     
     private var backgroundView: some View {
@@ -43,12 +54,15 @@ struct HomeView: View {
                 ForEach(
                     viewModel.developers,
                     id: \.id,
-                    content: { person in
+                    content: {
+                        person in
                         DeveloperCardRow(
                             parameters: .init(
                                 icon: Image(systemName: "swift"),
                                 title: person.name,
-                                description: person.surname, tapAction: {
+                                description: person.surname,
+                                tapAction: {
+                                    navigationPath.append(person)
                                 }
                             )
                         )

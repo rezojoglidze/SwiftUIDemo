@@ -26,6 +26,9 @@
 		A9488C8F2C6955680044815D /* GetDevelopersGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C8E2C6955680044815D /* GetDevelopersGateway.swift */; };
 		A9488C912C6955720044815D /* MockGetDevelopersGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C902C6955720044815D /* MockGetDevelopersGateway.swift */; };
 		A9488C942C695E4A0044815D /* PreviewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C932C695E4A0044815D /* PreviewConfiguration.swift */; };
+		A9488C972C69FF630044815D /* DeveloperDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C962C69FF630044815D /* DeveloperDetailsView.swift */; };
+		A9488C992C69FF680044815D /* DeveloperDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C982C69FF680044815D /* DeveloperDetailsViewModel.swift */; };
+		A9488C9B2C69FF740044815D /* DeveloperDetailsViewParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C9A2C69FF740044815D /* DeveloperDetailsViewParameters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		A9488C8E2C6955680044815D /* GetDevelopersGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDevelopersGateway.swift; sourceTree = "<group>"; };
 		A9488C902C6955720044815D /* MockGetDevelopersGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGetDevelopersGateway.swift; sourceTree = "<group>"; };
 		A9488C932C695E4A0044815D /* PreviewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewConfiguration.swift; sourceTree = "<group>"; };
+		A9488C962C69FF630044815D /* DeveloperDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperDetailsView.swift; sourceTree = "<group>"; };
+		A9488C982C69FF680044815D /* DeveloperDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperDetailsViewModel.swift; sourceTree = "<group>"; };
+		A9488C9A2C69FF740044815D /* DeveloperDetailsViewParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperDetailsViewParameters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				A92216F52C6741220009F898 /* Splash */,
-				A92216F82C675CFD0009F898 /* Home */,
+				A92216F82C675CFD0009F898 /* Home View */,
+				A9488C952C69FF370044815D /* Developer Details View */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -136,13 +143,13 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
-		A92216F82C675CFD0009F898 /* Home */ = {
+		A92216F82C675CFD0009F898 /* Home View */ = {
 			isa = PBXGroup;
 			children = (
 				A92216F92C675D240009F898 /* HomeView.swift */,
 				A92216FB2C675D640009F898 /* HomeViewModel.swift */,
 			);
-			path = Home;
+			path = "Home View";
 			sourceTree = "<group>";
 		};
 		A92216FD2C6778430009F898 /* Views */ = {
@@ -247,6 +254,16 @@
 			path = "Preview Helpers";
 			sourceTree = "<group>";
 		};
+		A9488C952C69FF370044815D /* Developer Details View */ = {
+			isa = PBXGroup;
+			children = (
+				A9488C9A2C69FF740044815D /* DeveloperDetailsViewParameters.swift */,
+				A9488C962C69FF630044815D /* DeveloperDetailsView.swift */,
+				A9488C982C69FF680044815D /* DeveloperDetailsViewModel.swift */,
+			);
+			path = "Developer Details View";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -325,17 +342,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A92216FA2C675D240009F898 /* HomeView.swift in Sources */,
+				A9488C992C69FF680044815D /* DeveloperDetailsViewModel.swift in Sources */,
 				A92217142C688D290009F898 /* Extension+View.swift in Sources */,
 				A9488C842C6954620044815D /* DIContainer.swift in Sources */,
 				A9488C892C6955410044815D /* GetDevelopersGatewayProtocol.swift in Sources */,
 				A92217012C6779750009F898 /* DeveloperCardRow.swift in Sources */,
 				A92216E52C673D350009F898 /* SwiftUIDemoApp.swift in Sources */,
 				A9488C912C6955720044815D /* MockGetDevelopersGateway.swift in Sources */,
+				A9488C9B2C69FF740044815D /* DeveloperDetailsViewParameters.swift in Sources */,
 				A92217052C677A850009F898 /* DeveloperCardRowUIModel.swift in Sources */,
 				A92216FC2C675D640009F898 /* HomeViewModel.swift in Sources */,
 				A922170F2C6800DD0009F898 /* FontBook.swift in Sources */,
 				A9488C942C695E4A0044815D /* PreviewConfiguration.swift in Sources */,
 				A92217122C688C760009F898 /* Extension+CGSize.swift in Sources */,
+				A9488C972C69FF630044815D /* DeveloperDetailsView.swift in Sources */,
 				A92217032C677A730009F898 /* DeveloperCardRowParameters.swift in Sources */,
 				A9488C8F2C6955680044815D /* GetDevelopersGateway.swift in Sources */,
 				A9488C8D2C69555F0044815D /* GetDevelopersEntity.swift in Sources */,
@@ -481,7 +501,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -512,7 +532,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -30,6 +30,8 @@ struct DeveloperCardRow: View {
         ZStack {
             contentView
                 .background(content: { backgroundView })
+        }.onTapGesture {
+            parameters.tapAction()
         }
     }
     

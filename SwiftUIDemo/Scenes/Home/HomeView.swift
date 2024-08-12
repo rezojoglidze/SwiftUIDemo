@@ -26,7 +26,7 @@ struct HomeView: View {
             backgroundView
             developersView
                 .padding(20)
-        }).onAppear(perform: {
+        }).onFirstAppear(perform: {
             viewModel.didLoad()
         })
     }
@@ -49,7 +49,6 @@ struct HomeView: View {
                                 icon: Image(systemName: "swift"),
                                 title: person.name,
                                 description: person.surname, tapAction: {
-                                    
                                 }
                             )
                         )

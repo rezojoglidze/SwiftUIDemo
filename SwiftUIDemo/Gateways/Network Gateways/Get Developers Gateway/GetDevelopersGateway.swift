@@ -16,7 +16,7 @@ struct GetDevelopersGateway: GetDevelopersGatewayProtocol {
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         
-        let (data, response): (Data, URLResponse) = try await URLSession.shared.data(for: request)
+        let (data, _): (Data, URLResponse) = try await URLSession.shared.data(for: request)
         
         let entity: [GetDevelopersEntity] = try JSONDecoder().decode([GetDevelopersEntity].self, from: data)
         

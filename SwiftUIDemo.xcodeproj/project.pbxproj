@@ -94,7 +94,6 @@
 				A9488C852C6954BB0044815D /* Gateways */,
 				A922170C2C6800B80009F898 /* Helpers */,
 				A92217102C688C4F0009F898 /* Extensions */,
-				A9488C922C695E350044815D /* Preview Helpers */,
 				A92216F42C673F650009F898 /* Resources */,
 				A92216EA2C673D370009F898 /* Preview Content */,
 			);
@@ -245,13 +244,6 @@
 				A9488C902C6955720044815D /* MockGetDevelopersGateway.swift */,
 			);
 			path = "Get Developers Gateway";
-			sourceTree = "<group>";
-		};
-		A9488C922C695E350044815D /* Preview Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Preview Helpers";
 			sourceTree = "<group>";
 		};
 		A9488C952C69FF370044815D /* Developer Details View */ = {

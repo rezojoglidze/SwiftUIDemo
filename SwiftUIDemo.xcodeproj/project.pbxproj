@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A91FCCEA2C6B4FDB00C4B57F /* RJSwiftMacros in Frameworks */ = {isa = PBXBuildFile; productRef = A91FCCE92C6B4FDB00C4B57F /* RJSwiftMacros */; };
 		A92216E52C673D350009F898 /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92216E42C673D350009F898 /* SwiftUIDemoApp.swift */; };
 		A92216E92C673D370009F898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92216E82C673D370009F898 /* Assets.xcassets */; };
 		A92216EC2C673D370009F898 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92216EB2C673D370009F898 /* Preview Assets.xcassets */; };
@@ -16,7 +17,6 @@
 		A92217012C6779750009F898 /* DeveloperCardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217002C6779750009F898 /* DeveloperCardRow.swift */; };
 		A92217032C677A730009F898 /* DeveloperCardRowParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217022C677A730009F898 /* DeveloperCardRowParameters.swift */; };
 		A92217052C677A850009F898 /* DeveloperCardRowUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217042C677A850009F898 /* DeveloperCardRowUIModel.swift */; };
-		A92217082C677AD10009F898 /* RJSwiftMacros in Frameworks */ = {isa = PBXBuildFile; productRef = A92217072C677AD10009F898 /* RJSwiftMacros */; };
 		A922170F2C6800DD0009F898 /* FontBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A922170E2C6800DD0009F898 /* FontBook.swift */; };
 		A92217122C688C760009F898 /* Extension+CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217112C688C760009F898 /* Extension+CGSize.swift */; };
 		A92217142C688D290009F898 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217132C688D290009F898 /* Extension+View.swift */; };
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A92217082C677AD10009F898 /* RJSwiftMacros in Frameworks */,
+				A91FCCEA2C6B4FDB00C4B57F /* RJSwiftMacros in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +281,7 @@
 			);
 			name = SwiftUIDemo;
 			packageProductDependencies = (
-				A92217072C677AD10009F898 /* RJSwiftMacros */,
+				A91FCCE92C6B4FDB00C4B57F /* RJSwiftMacros */,
 			);
 			productName = SwiftUIDemo;
 			productReference = A92216E12C673D350009F898 /* SwiftUIDemo.app */;
@@ -312,7 +312,7 @@
 			);
 			mainGroup = A92216D82C673D350009F898;
 			packageReferences = (
-				A92217062C677AD10009F898 /* XCRemoteSwiftPackageReference "RJSwiftMacros" */,
+				A91FCCE82C6B4FDB00C4B57F /* XCRemoteSwiftPackageReference "RJSwiftMacros" */,
 			);
 			productRefGroup = A92216E22C673D350009F898 /* Products */;
 			projectDirPath = "";
@@ -570,20 +570,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A92217062C677AD10009F898 /* XCRemoteSwiftPackageReference "RJSwiftMacros" */ = {
+		A91FCCE82C6B4FDB00C4B57F /* XCRemoteSwiftPackageReference "RJSwiftMacros" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/rezojoglidze/RJSwiftMacros";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.0;
+				minimumVersion = 0.3.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A92217072C677AD10009F898 /* RJSwiftMacros */ = {
+		A91FCCE92C6B4FDB00C4B57F /* RJSwiftMacros */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A92217062C677AD10009F898 /* XCRemoteSwiftPackageReference "RJSwiftMacros" */;
+			package = A91FCCE82C6B4FDB00C4B57F /* XCRemoteSwiftPackageReference "RJSwiftMacros" */;
 			productName = RJSwiftMacros;
 		};
 /* End XCSwiftPackageProductDependency section */

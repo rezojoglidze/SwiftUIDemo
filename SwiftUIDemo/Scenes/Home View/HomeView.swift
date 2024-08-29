@@ -26,7 +26,6 @@ struct HomeView: View {
             ZStack {
                 backgroundView
                 developersView
-                    .padding(.horizontal, 20)
             }
             .onFirstAppear(perform: {
                 viewModel.didLoad()
@@ -65,7 +64,7 @@ struct HomeView: View {
                                     navigationPath.append(person)
                                 }
                             )
-                        )
+                        ).padding(.horizontal, 20)
                     }
                 )
             }

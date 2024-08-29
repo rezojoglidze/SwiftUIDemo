@@ -10,7 +10,7 @@ import RJSwiftMacros
 import RJSwiftCommon
 
 @CodingKeys()
-@MockBuilder(numberOfItems: 5)
+@MockBuilder(numberOfItems: 10)
 struct GetDevelopersEntity: Decodable, Identifiable, Hashable {
     @CodingKeyIgnored() var id: UUID = .init()
     let name: String

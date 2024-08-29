@@ -16,7 +16,11 @@ final class HomeViewModel: ObservableObject {
     @Published private(set) var developers: [GetDevelopersEntity] = []
     
     // MARK: Properties - Cancellables
-    private var getDevelopersTask: Task<Void, Never>?
+    private var getDevelopersTask: Task<Void, Never>? {
+        willSet {
+            getDevelopersTask?.cancel()
+        }
+    }
     
     // MARK: Lifecycle
     func didLoad() {
@@ -25,7 +29,6 @@ final class HomeViewModel: ObservableObject {
     
     // MARK: Requests
     private func getDevelopers() {
-        getDevelopersTask?.cancel()
         getDevelopersTask = Task(operation: {
             do {
                 let developers: [GetDevelopersEntity] = try await DIContainer.shared.networkGateways.getDevelopersGateway.fetch()

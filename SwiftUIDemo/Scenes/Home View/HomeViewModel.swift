@@ -10,7 +10,6 @@ import RJSwiftMacros
 import RJSwiftCommon
 
 // MARK: - Home View Model
-@MainActor
 final class HomeViewModel: ObservableObject {
     // MARK: Properties
     @Published private(set) var developers: [GetDevelopersEntity] = []
@@ -29,7 +28,7 @@ final class HomeViewModel: ObservableObject {
     
     // MARK: Requests
     private func getDevelopers() {
-        getDevelopersTask = Task(operation: {
+        getDevelopersTask = Task(operation: { @MainActor in
             do {
                 let developers: [GetDevelopersEntity] = try await DIContainer.shared.networkGateways.getDevelopersGateway.fetch()
                 guard !Task.isCancelled else { return }
@@ -37,7 +36,7 @@ final class HomeViewModel: ObservableObject {
                 self.developers = developers
             } catch {
                 guard !Task.isCancelled else { return }
-
+                
                 print(error.localizedDescription)
             }
         })

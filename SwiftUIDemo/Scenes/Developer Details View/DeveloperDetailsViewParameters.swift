@@ -7,7 +7,6 @@
 
 import Foundation
 import RJSwiftMacros
-import RJSwiftCommon
 
 //MARK: - Developer Details View Parameters
 @MockBuilder()

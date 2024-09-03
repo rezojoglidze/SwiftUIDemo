@@ -7,7 +7,6 @@
 
 import Foundation
 import RJSwiftMacros
-import RJSwiftCommon
 
 @CodingKeys()
 @MockBuilder(numberOfItems: 10)

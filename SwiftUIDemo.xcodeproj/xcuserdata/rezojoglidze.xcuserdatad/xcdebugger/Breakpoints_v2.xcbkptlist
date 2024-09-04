@@ -3,4 +3,22 @@
    uuid = "E736D5C8-606A-4239-9ED3-09200276A065"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CEA5AAA8-8824-4CF2-A8D1-8CCBB8EA719F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIDemo/Scenes/Developer Details View/DeveloperDetailsViewParameters.swift"
+            startingColumnNumber = "2"
+            endingColumnNumber = "13"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "DeveloperDetailsViewParameters"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -20,7 +20,6 @@
 		A922170F2C6800DD0009F898 /* FontBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A922170E2C6800DD0009F898 /* FontBook.swift */; };
 		A92217122C688C760009F898 /* Extension+CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217112C688C760009F898 /* Extension+CGSize.swift */; };
 		A92217142C688D290009F898 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217132C688D290009F898 /* Extension+View.swift */; };
-		A93D3F642C81BECE00F1708A /* PropertyWrappersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93D3F632C81BECE00F1708A /* PropertyWrappersView.swift */; };
 		A9488C842C6954620044815D /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C832C6954620044815D /* DIContainer.swift */; };
 		A9488C892C6955410044815D /* GetDevelopersGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C882C6955410044815D /* GetDevelopersGatewayProtocol.swift */; };
 		A9488C8D2C69555F0044815D /* GetDevelopersEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C8C2C69555F0044815D /* GetDevelopersEntity.swift */; };
@@ -46,7 +45,6 @@
 		A922170E2C6800DD0009F898 /* FontBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontBook.swift; sourceTree = "<group>"; };
 		A92217112C688C760009F898 /* Extension+CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CGSize.swift"; sourceTree = "<group>"; };
 		A92217132C688D290009F898 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
-		A93D3F632C81BECE00F1708A /* PropertyWrappersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappersView.swift; sourceTree = "<group>"; };
 		A9488C832C6954620044815D /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		A9488C882C6955410044815D /* GetDevelopersGatewayProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDevelopersGatewayProtocol.swift; sourceTree = "<group>"; };
 		A9488C8C2C69555F0044815D /* GetDevelopersEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDevelopersEntity.swift; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 				A92216F52C6741220009F898 /* Splash */,
 				A92216F82C675CFD0009F898 /* Home View */,
 				A9488C952C69FF370044815D /* Developer Details View */,
-				A93D3F622C81BEBA00F1708A /* Property Wrappers */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -204,14 +201,6 @@
 				A92217132C688D290009F898 /* Extension+View.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		A93D3F622C81BEBA00F1708A /* Property Wrappers */ = {
-			isa = PBXGroup;
-			children = (
-				A93D3F632C81BECE00F1708A /* PropertyWrappersView.swift */,
-			);
-			path = "Property Wrappers";
 			sourceTree = "<group>";
 		};
 		A9488C812C69543E0044815D /* Services and Managers */ = {
@@ -354,7 +343,6 @@
 				A9488C912C6955720044815D /* MockGetDevelopersGateway.swift in Sources */,
 				A9488C9B2C69FF740044815D /* DeveloperDetailsViewParameters.swift in Sources */,
 				A92217052C677A850009F898 /* DeveloperCardRowUIModel.swift in Sources */,
-				A93D3F642C81BECE00F1708A /* PropertyWrappersView.swift in Sources */,
 				A92216FC2C675D640009F898 /* HomeViewModel.swift in Sources */,
 				A922170F2C6800DD0009F898 /* FontBook.swift in Sources */,
 				A9488C942C695E4A0044815D /* PreviewConfiguration.swift in Sources */,

@@ -29,7 +29,6 @@
 		A9488C972C69FF630044815D /* DeveloperDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C962C69FF630044815D /* DeveloperDetailsView.swift */; };
 		A9488C992C69FF680044815D /* DeveloperDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C982C69FF680044815D /* DeveloperDetailsViewModel.swift */; };
 		A9488C9B2C69FF740044815D /* DeveloperDetailsViewParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C9A2C69FF740044815D /* DeveloperDetailsViewParameters.swift */; };
-		A9E3E7A92C923A1200AAF92E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A9E3E7A82C923A1200AAF92E /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +62,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A91FCCEA2C6B4FDB00C4B57F /* RJSwiftMacros in Frameworks */,
-				A9E3E7A92C923A1200AAF92E /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +274,6 @@
 			name = SwiftUIDemo;
 			packageProductDependencies = (
 				A91FCCE92C6B4FDB00C4B57F /* RJSwiftMacros */,
-				A9E3E7A82C923A1200AAF92E /* Lottie */,
 			);
 			productName = SwiftUIDemo;
 			productReference = A92216E12C673D350009F898 /* SwiftUIDemo.app */;
@@ -308,7 +305,6 @@
 			mainGroup = A92216D82C673D350009F898;
 			packageReferences = (
 				A91FCCE82C6B4FDB00C4B57F /* XCRemoteSwiftPackageReference "RJSwiftMacros" */,
-				A9E3E7A72C923A1200AAF92E /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = A92216E22C673D350009F898 /* Products */;
 			projectDirPath = "";
@@ -574,14 +570,6 @@
 				minimumVersion = 0.3.4;
 			};
 		};
-		A9E3E7A72C923A1200AAF92E /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.5.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -589,11 +577,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A91FCCE82C6B4FDB00C4B57F /* XCRemoteSwiftPackageReference "RJSwiftMacros" */;
 			productName = RJSwiftMacros;
-		};
-		A9E3E7A82C923A1200AAF92E /* Lottie */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A9E3E7A72C923A1200AAF92E /* XCRemoteSwiftPackageReference "lottie-spm" */;
-			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

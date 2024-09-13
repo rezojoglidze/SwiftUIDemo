@@ -30,10 +30,6 @@
 		A9488C992C69FF680044815D /* DeveloperDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C982C69FF680044815D /* DeveloperDetailsViewModel.swift */; };
 		A9488C9B2C69FF740044815D /* DeveloperDetailsViewParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C9A2C69FF740044815D /* DeveloperDetailsViewParameters.swift */; };
 		A9E3E7A92C923A1200AAF92E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A9E3E7A82C923A1200AAF92E /* Lottie */; };
-		A9E3E7AB2C923A2B00AAF92E /* PulsingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E3E7AA2C923A2B00AAF92E /* PulsingAnimation.swift */; };
-		A9E3E7AD2C923A3000AAF92E /* growing.json in Resources */ = {isa = PBXBuildFile; fileRef = A9E3E7AC2C923A3000AAF92E /* growing.json */; };
-		A9E3E7AF2C923A3600AAF92E /* pulsing.json in Resources */ = {isa = PBXBuildFile; fileRef = A9E3E7AE2C923A3600AAF92E /* pulsing.json */; };
-		A9E3E7B12C923A3C00AAF92E /* GrowingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E3E7B02C923A3C00AAF92E /* GrowingAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,10 +55,6 @@
 		A9488C962C69FF630044815D /* DeveloperDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperDetailsView.swift; sourceTree = "<group>"; };
 		A9488C982C69FF680044815D /* DeveloperDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperDetailsViewModel.swift; sourceTree = "<group>"; };
 		A9488C9A2C69FF740044815D /* DeveloperDetailsViewParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperDetailsViewParameters.swift; sourceTree = "<group>"; };
-		A9E3E7AA2C923A2B00AAF92E /* PulsingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsingAnimation.swift; sourceTree = "<group>"; };
-		A9E3E7AC2C923A3000AAF92E /* growing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = growing.json; sourceTree = "<group>"; };
-		A9E3E7AE2C923A3600AAF92E /* pulsing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pulsing.json; sourceTree = "<group>"; };
-		A9E3E7B02C923A3C00AAF92E /* GrowingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,10 +139,6 @@
 		A92216F52C6741220009F898 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				A9E3E7B02C923A3C00AAF92E /* GrowingAnimation.swift */,
-				A9E3E7AA2C923A2B00AAF92E /* PulsingAnimation.swift */,
-				A9E3E7AE2C923A3600AAF92E /* pulsing.json */,
-				A9E3E7AC2C923A3000AAF92E /* growing.json */,
 				A92216F62C6741300009F898 /* LaunchScreen.storyboard */,
 			);
 			path = Splash;
@@ -337,8 +325,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A92216EC2C673D370009F898 /* Preview Assets.xcassets in Resources */,
-				A9E3E7AF2C923A3600AAF92E /* pulsing.json in Resources */,
-				A9E3E7AD2C923A3000AAF92E /* growing.json in Resources */,
 				A92216F72C6741300009F898 /* LaunchScreen.storyboard in Resources */,
 				A92216E92C673D370009F898 /* Assets.xcassets in Resources */,
 			);
@@ -358,10 +344,8 @@
 				A9488C892C6955410044815D /* GetDevelopersGatewayProtocol.swift in Sources */,
 				A92217012C6779750009F898 /* DeveloperCardRow.swift in Sources */,
 				A92216E52C673D350009F898 /* SwiftUIDemoApp.swift in Sources */,
-				A9E3E7AB2C923A2B00AAF92E /* PulsingAnimation.swift in Sources */,
 				A9488C912C6955720044815D /* MockGetDevelopersGateway.swift in Sources */,
 				A9488C9B2C69FF740044815D /* DeveloperDetailsViewParameters.swift in Sources */,
-				A9E3E7B12C923A3C00AAF92E /* GrowingAnimation.swift in Sources */,
 				A92217052C677A850009F898 /* DeveloperCardRowUIModel.swift in Sources */,
 				A92216FC2C675D640009F898 /* HomeViewModel.swift in Sources */,
 				A922170F2C6800DD0009F898 /* FontBook.swift in Sources */,

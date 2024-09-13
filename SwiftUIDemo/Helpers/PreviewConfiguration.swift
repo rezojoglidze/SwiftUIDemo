@@ -6,7 +6,6 @@
 //
 
 #if DEBUG
-
 import Foundation
 
 // MARK: - Preview Configuration

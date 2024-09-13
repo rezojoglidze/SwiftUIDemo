@@ -3,7 +3,7 @@
 SwiftUIDemo is a demo project built using the SwiftUI framework, following the MVVM (Model-View-ViewModel) architecture pattern. This project demonstrates how to make a clean and maintainable SwiftUI app focusing on modularity and reusable components.
 
 > [!TIP]  
-> I used several macros from my `RJSwiftMacros` package. For more detailed information, see the [LINK](https://github.com/rezojoglidze/RJSwiftMacros).
+> I used macros from my `RJSwiftMacros` package. For more detailed information, see the [LINK](https://github.com/rezojoglidze/RJSwiftMacros).
 
 ## Features
 - `SwiftUI Framework`: Utilizes SwiftUI to build declarative user interfaces.

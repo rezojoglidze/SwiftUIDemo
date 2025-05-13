@@ -8,6 +8,6 @@
 import Foundation
 
 // MARK: - Get Developers Gateway Protocol
-protocol GetDevelopersGatewayProtocol {
+protocol GetDevelopersGatewayProtocol: Sendable {
     func fetch() async throws -> [GetDevelopersEntity]
 }

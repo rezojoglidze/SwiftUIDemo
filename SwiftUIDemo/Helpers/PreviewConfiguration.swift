@@ -8,14 +8,22 @@
 #if DEBUG
 import Foundation
 
-// MARK: - Preview Configuration
-
-private var isConfigured: Bool = false
-
 func configurePreview() {
-    guard !isConfigured else { return }
-    isConfigured = true
+    let previewConfigurator = PreviewConfigurator()
+    
+    Task {
+        await previewConfigurator.configurePreview()
+    }
+}
 
-    DIContainer.shared.injectPreviewDependencies()
+actor PreviewConfigurator {
+    private var isConfigured: Bool = false
+    
+    func configurePreview() {
+        guard !isConfigured else { return }
+        isConfigured = true
+        
+        DIContainer.shared.injectPreviewDependencies()
+    }
 }
 #endif

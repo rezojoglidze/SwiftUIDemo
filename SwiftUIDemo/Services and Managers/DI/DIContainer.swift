@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - DIContainer
-final class DIContainer {
+final actor DIContainer {
     // MARK: Properties - Singleton
     static let shared: DIContainer = .init()
 
@@ -19,15 +19,26 @@ final class DIContainer {
     private init() {}
     
     // MARK: Network Gateways
-    final class NetworkGateways {
+    final actor NetworkGateways {
         // MARK: Properties - Get Developers Gateweay
-        lazy var getDevelopersGateway: GetDevelopersGatewayProtocol = GetDevelopersGateway()
+        var getDevelopersGateway: GetDevelopersGatewayProtocol = GetDevelopersGateway() // Changed to var
     }
     
     // MARK: Preview Injection
-#if DEBUG
-    func injectPreviewDependencies() {
-        networkGateways.getDevelopersGateway = MockGetDevelopersGateway()
+
+    nonisolated func injectPreviewDependencies() {
+        Task {
+            await setPreviewDependencies()
+        }
     }
-#endif
+
+    private func setPreviewDependencies() async {
+        await networkGateways.setGetDevelopersGateway(MockGetDevelopersGateway())
+    }
+}
+
+extension DIContainer.NetworkGateways {
+    func setGetDevelopersGateway(_ gateway: GetDevelopersGatewayProtocol) async {
+        self.getDevelopersGateway = gateway
+    }
 }

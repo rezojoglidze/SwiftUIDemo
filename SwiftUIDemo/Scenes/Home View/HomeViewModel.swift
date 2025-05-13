@@ -8,9 +8,11 @@
 import Foundation
 
 // MARK: - Home View Model
+@MainActor
+@Observable
 final class HomeViewModel: ObservableObject {
     // MARK: Properties
-    @Published private(set) var developers: [GetDevelopersEntity] = []
+    private(set) var developers: [GetDevelopersEntity] = []
     
     // MARK: Lifecycle
     func didLoad() {
@@ -19,7 +21,7 @@ final class HomeViewModel: ObservableObject {
     
     // MARK: Requests
     private func getDevelopers() {
-        Task(operation: { @MainActor in
+        Task {
             do {
                 let developers: [GetDevelopersEntity] = try await DIContainer.shared.networkGateways.getDevelopersGateway.fetch()
                 guard !Task.isCancelled else { return }
@@ -30,6 +32,6 @@ final class HomeViewModel: ObservableObject {
                 
                 print(error.localizedDescription)
             }
-        })
+        }
     }
 }

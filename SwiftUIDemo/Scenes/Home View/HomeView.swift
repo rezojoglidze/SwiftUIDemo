@@ -10,14 +10,14 @@ import SwiftUI
 // MARK: - Home View
 struct HomeView: View {
     // MARK: Properties
-    @StateObject private var viewModel: HomeViewModel
+    private var viewModel: HomeViewModel
     
     // MARK: Properties - Navigation
     @State private var navigationPath = NavigationPath()
     
     // MARK: Initializers
     init() {
-        self._viewModel = StateObject(wrappedValue: HomeViewModel())
+        self.viewModel = HomeViewModel()
     }
     
     // MARK: Body

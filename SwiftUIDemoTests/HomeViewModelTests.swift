@@ -28,7 +28,7 @@ final class HomeViewModelTests: XCTestCase {
     }
     
     func test_getDevelopers() async throws {
-        await sut.didLoad()
+        await sut.onFirstTask()
         
         let developers = sut.developers
         print(developers.count, "nilnilnilnil", developers.first?.name ?? "nil")

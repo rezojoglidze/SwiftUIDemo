@@ -18,8 +18,9 @@
 		A92217032C677A730009F898 /* DeveloperCardRowParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217022C677A730009F898 /* DeveloperCardRowParameters.swift */; };
 		A92217052C677A850009F898 /* DeveloperCardRowUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217042C677A850009F898 /* DeveloperCardRowUIModel.swift */; };
 		A922170F2C6800DD0009F898 /* FontBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A922170E2C6800DD0009F898 /* FontBook.swift */; };
-		A92217122C688C760009F898 /* Extension+CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217112C688C760009F898 /* Extension+CGSize.swift */; };
-		A92217142C688D290009F898 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92217132C688D290009F898 /* Extension+View.swift */; };
+		A93F685E2DE7501100B4B139 /* Extension+CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93F685B2DE7501100B4B139 /* Extension+CGSize.swift */; };
+		A93F685F2DE7501100B4B139 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93F685C2DE7501100B4B139 /* Extension+View.swift */; };
+		A93F68622DE7504100B4B139 /* OnFirstTaskModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93F68612DE7504100B4B139 /* OnFirstTaskModifier.swift */; };
 		A9488C842C6954620044815D /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C832C6954620044815D /* DIContainer.swift */; };
 		A9488C892C6955410044815D /* GetDevelopersGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C882C6955410044815D /* GetDevelopersGatewayProtocol.swift */; };
 		A9488C8D2C69555F0044815D /* GetDevelopersEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9488C8C2C69555F0044815D /* GetDevelopersEntity.swift */; };
@@ -53,9 +54,10 @@
 		A92217022C677A730009F898 /* DeveloperCardRowParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperCardRowParameters.swift; sourceTree = "<group>"; };
 		A92217042C677A850009F898 /* DeveloperCardRowUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperCardRowUIModel.swift; sourceTree = "<group>"; };
 		A922170E2C6800DD0009F898 /* FontBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontBook.swift; sourceTree = "<group>"; };
-		A92217112C688C760009F898 /* Extension+CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CGSize.swift"; sourceTree = "<group>"; };
-		A92217132C688D290009F898 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		A93F68442DE7219600B4B139 /* SwiftUIDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A93F685B2DE7501100B4B139 /* Extension+CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CGSize.swift"; sourceTree = "<group>"; };
+		A93F685C2DE7501100B4B139 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
+		A93F68612DE7504100B4B139 /* OnFirstTaskModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnFirstTaskModifier.swift; sourceTree = "<group>"; };
 		A9488C832C6954620044815D /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		A9488C882C6955410044815D /* GetDevelopersGatewayProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDevelopersGatewayProtocol.swift; sourceTree = "<group>"; };
 		A9488C8C2C69555F0044815D /* GetDevelopersEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDevelopersEntity.swift; sourceTree = "<group>"; };
@@ -117,7 +119,7 @@
 				A9488C812C69543E0044815D /* Services and Managers */,
 				A9488C852C6954BB0044815D /* Gateways */,
 				A922170C2C6800B80009F898 /* Helpers */,
-				A92217102C688C4F0009F898 /* Extensions */,
+				A93F68602DE7501B00B4B139 /* Utils */,
 				A92216F42C673F650009F898 /* Resources */,
 				A92216EA2C673D370009F898 /* Preview Content */,
 			);
@@ -218,13 +220,22 @@
 			path = BrandBook;
 			sourceTree = "<group>";
 		};
-		A92217102C688C4F0009F898 /* Extensions */ = {
+		A93F68602DE7501B00B4B139 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				A92217112C688C760009F898 /* Extension+CGSize.swift */,
-				A92217132C688D290009F898 /* Extension+View.swift */,
+				A93F685B2DE7501100B4B139 /* Extension+CGSize.swift */,
+				A93F685C2DE7501100B4B139 /* Extension+View.swift */,
+				A93F68632DE7504400B4B139 /* Modifiers */,
 			);
-			path = Extensions;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A93F68632DE7504400B4B139 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				A93F68612DE7504100B4B139 /* OnFirstTaskModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 		A9488C812C69543E0044815D /* Services and Managers */ = {
@@ -394,7 +405,8 @@
 			files = (
 				A92216FA2C675D240009F898 /* HomeView.swift in Sources */,
 				A9488C992C69FF680044815D /* DeveloperDetailsViewModel.swift in Sources */,
-				A92217142C688D290009F898 /* Extension+View.swift in Sources */,
+				A93F685F2DE7501100B4B139 /* Extension+View.swift in Sources */,
+				A93F68622DE7504100B4B139 /* OnFirstTaskModifier.swift in Sources */,
 				A9488C842C6954620044815D /* DIContainer.swift in Sources */,
 				A9488C892C6955410044815D /* GetDevelopersGatewayProtocol.swift in Sources */,
 				A92217012C6779750009F898 /* DeveloperCardRow.swift in Sources */,
@@ -405,9 +417,9 @@
 				A92216FC2C675D640009F898 /* HomeViewModel.swift in Sources */,
 				A922170F2C6800DD0009F898 /* FontBook.swift in Sources */,
 				A9488C942C695E4A0044815D /* PreviewConfiguration.swift in Sources */,
-				A92217122C688C760009F898 /* Extension+CGSize.swift in Sources */,
 				A9488C972C69FF630044815D /* DeveloperDetailsView.swift in Sources */,
 				A92217032C677A730009F898 /* DeveloperCardRowParameters.swift in Sources */,
+				A93F685E2DE7501100B4B139 /* Extension+CGSize.swift in Sources */,
 				A9488C8F2C6955680044815D /* GetDevelopersGateway.swift in Sources */,
 				A9488C8D2C69555F0044815D /* GetDevelopersEntity.swift in Sources */,
 			);

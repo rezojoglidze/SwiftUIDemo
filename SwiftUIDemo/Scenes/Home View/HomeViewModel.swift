@@ -15,7 +15,7 @@ final class HomeViewModel {
     private(set) var developers: [GetDevelopersEntity] = []
     
     // MARK: Lifecycle
-    func didLoad() async {
+    func onFirstTask() async {
         await getDevelopers()
     }
     

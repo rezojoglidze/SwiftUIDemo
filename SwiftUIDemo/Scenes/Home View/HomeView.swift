@@ -28,7 +28,9 @@ struct HomeView: View {
                 developersView
             }
             .onFirstAppear(perform: {
-                viewModel.didLoad()
+                Task {
+                   await viewModel.didLoad()
+                }
             })
             .navigationBarTitleDisplayMode(.inline)
             .navigationTitle("Home View")

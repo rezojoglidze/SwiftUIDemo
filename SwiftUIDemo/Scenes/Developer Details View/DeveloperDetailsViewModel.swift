@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import Observation
 
 // MARK: Developer Details ViewModel
-final class DeveloperDetailsViewModel: ObservableObject {
+@Observable
+final class DeveloperDetailsViewModel {
     // MARK: Properties - Architecture
     let parameters: DeveloperDetailsViewParameters
     

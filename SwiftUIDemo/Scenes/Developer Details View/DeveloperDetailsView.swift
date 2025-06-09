@@ -10,11 +10,11 @@ import SwiftUI
 // MARK: Developer Details View
 struct DeveloperDetailsView: View {
     // MARK: Properties
-    @StateObject private var viewModel: DeveloperDetailsViewModel
+    private var viewModel: DeveloperDetailsViewModel
     
     // MARK: Initializers
     init(parameters: DeveloperDetailsViewParameters) {
-        self._viewModel = StateObject(wrappedValue: DeveloperDetailsViewModel(parameters: parameters))
+        self.viewModel = DeveloperDetailsViewModel(parameters: parameters)
     }
     
     // MARK: Body
